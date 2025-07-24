@@ -9,6 +9,7 @@ class Logger:
         # Ensure the directory exists
         data_dir = os.path.join(path, task_name)
         os.makedirs(data_dir, exist_ok=True)
+        print('absolute data dir:',os.path.realpath(data_dir))
 
         # Create the log file for writing
         self.writer = open(os.path.join(data_dir, datafile_name), 'w')
@@ -19,6 +20,7 @@ class Logger:
         self.content_len =len(headline)
         # Write headers to the log file
         self.writer.write(log_content + '\n')
+        
 
     def log(self, variable_value):
         '''
