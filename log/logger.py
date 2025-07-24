@@ -27,7 +27,7 @@ class Logger:
         '''
         assert len(variable_value)==self.content_len
 
-        log_content = ",".join(variable_value)
+        log_content = ",".join(map(str, variable_value))
             
         self.writer.write(str(log_content) + '\n')
  
