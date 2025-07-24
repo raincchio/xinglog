@@ -5,7 +5,7 @@ setup(
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
-        'os',  # os is part of the Python standard library, so it's just an example
+     # os is part of the Python standard library, so it's just an example
     ],
     description='A package for logging model training information',
     author='raincchio',
