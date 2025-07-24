@@ -25,7 +25,7 @@ class Logger:
         Write a log entry to the file.
         variable_value: [0.1,0.2,0.3]
         '''
-        assert len(log_variable)==self.contnet_len
+        assert len(variable_value)==self.contnet_len
             
         self.writer.write(str(log_variable) + '\n')
  
