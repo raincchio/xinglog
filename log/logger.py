@@ -27,7 +27,7 @@ class Logger:
         '''
         assert len(variable_value)==self.contnet_len
             
-        self.writer.write(str(log_variable) + '\n')
+        self.writer.write(str(variable_value) + '\n')
  
 
     def close(self):
