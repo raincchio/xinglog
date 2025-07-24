@@ -1,8 +1,7 @@
 import os
 
 class Logger:
-    self.writer=None
-    self.content_len=0
+
     def __init__(self, path, task_name, datafile_name, headline):
         '''
         headline: ['eval_reward', 'policy_loss', 'value_loss']
