@@ -31,9 +31,9 @@ class XLogger:
         Write a log entry to the file.
         variable_value: [0.1,0.2,0.3]
         '''
-        # assert len(variable_value)==self.content_len
 
         data = self.data.values()
+        assert len(data)==self.content_len
 
         log_content = ",".join(map(str, data))
             
